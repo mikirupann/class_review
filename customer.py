@@ -23,7 +23,7 @@ class Customer:
         return f"\"{self.first_name},{self.family_name},{self.age},{self.entry_free()}\""
 
     def info_tab(self):
-        return f"{self.first_name} {self.family_name} {self.age} {self.entry_free()}"
+        return f"{self.first_name}\t{self.family_name}\t{self.age}\t{self.entry_free()}"
 
     def info_pipe(self):
         return f"{self.first_name} {self.family_name}|{self.age}|{self.entry_free()}"
@@ -61,6 +61,7 @@ print(tom.info_tab())
 print(ieyasu.info_tab())
 print()
 
+# C-8
 print(ken.info_pipe())
 print(tom.info_pipe())
 print(ieyasu.info_pipe())
