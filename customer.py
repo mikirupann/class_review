@@ -8,12 +8,16 @@ class Customer:
         return f"\"{self.first_name} {self.family_name}\""
 
     def entry_free(self):
-        if self.age < 20:
+        if self.age <= 3:
+            return free
+        elif self.age < 20:
             return 1000
         elif 20 <= self.age < 65:
             return 1500
-        else:
+        elif 65 <= self.age < 75:
             return 1200
+        else:
+            return 500
 
     def info_csv(self):
         return f"\"{self.first_name},{self.family_name},{self.age},{self.entry_free()}\""
@@ -43,3 +47,7 @@ print()
 print(ken.info_csv())
 print(tom.info_csv())
 print(ieyasu.info_csv())
+print()
+
+# C-5.C-6
+# C-7
